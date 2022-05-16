@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order">
+
+    <ImageView
+        android:id="@+id/imgminus1"
+        android:layout_width="105dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgminus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgminus"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/minus" />
+
+    <ImageView
+        android:id="@+id/imgcart"
+        android:layout_width="93dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/imgminus"
+        android:layout_width="105dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgcart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minus" />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:text="Next"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgplate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imglove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fdd" />
+
+    <ImageView
+        android:id="@+id/imglove"
+        android:layout_width="100dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgplate"
+        app:layout_constraintTop_toBottomOf="@+id/imgcart"
+        app:srcCompat="@drawable/love" />
+
+    <ImageView
+        android:id="@+id/imgstars"
+        android:layout_width="209dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgplate"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/etvegetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
+        android:text="Vegetable Salad"
+        app:layout_constraintEnd_toStartOf="@+id/imgstars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgplate" />
+
+    <EditText
+        android:id="@+id/etsell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="We sell our foods cheap"
+        app:layout_constraintBottom_toBottomOf="@+id/imgstars"
+        app:layout_constraintEnd_toStartOf="@+id/imgstars"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/etrecommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Recommend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsell" />
+
+    <ImageView
+        android:id="@+id/imgfood"
+        android:layout_width="186dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgfood2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgfood2"
+        app:srcCompat="@drawable/fd" />
+
+    <ImageView
+        android:id="@+id/imgfood2"
+        android:layout_width="133dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgstars"
+        app:srcCompat="@drawable/fdd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
